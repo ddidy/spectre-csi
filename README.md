@@ -12,3 +12,13 @@
 * **Cyberpunk Terminal Dashboard:** Real-time metrics, presence states (`CLEAR`, `MINOR`, `HEAVY`), and ASCII waveform rendering powered by `rich`.
 * **Signal Processing Core:** Uses rolling envelope analysis and Median Absolute Deviation (MAD) to filter noise and detect subtle human micro-motions (like breathing) vs. heavy motion (walking).
 * **CSV Session Recording:** Export live telemetry for offline analysis.
+---
+
+## 📦 Installation
+
+Clone the repository and install the required dependencies:
+
+```bash
+git clone https://github.com/ddidy/spectre-csi
+cd spectre-csi
+pip install rich numpy pyserial
