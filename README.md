@@ -21,4 +21,5 @@ Clone the repository and install the required dependencies:
 ```bash
 git clone https://github.com/ddidy/spectre-csi
 cd spectre-csi
-pip install rich numpy pyserial
+pip install rich numpy
+
