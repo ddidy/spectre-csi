@@ -12,14 +12,17 @@
 * **Cyberpunk Terminal Dashboard:** Real-time metrics, presence states (`CLEAR`, `MINOR`, `HEAVY`), and ASCII waveform rendering powered by `rich`.
 * **Signal Processing Core:** Uses rolling envelope analysis and Median Absolute Deviation (MAD) to filter noise and detect subtle human micro-motions (like breathing) vs. heavy motion (walking).
 * **CSV Session Recording:** Export live telemetry for offline analysis.
+* **Universal Cross-Distro Support:** Automated installation script supporting Debian, Ubuntu, Kali Linux, Arch Linux, Fedora, Alpine, and Termux (Android).
+
 ---
 
 ## 📦 Installation
 
-Clone the repository and install the required dependencies:
+Clone the repository and run the universal setup script on **any Linux distribution or Termux**:
 
 ```bash
-git clone https://github.com/ddidy/spectre-csi
+git clone [https://github.com/ddidy/spectre-csi.git](https://github.com/ddidy/spectre-csi.git)
 cd spectre-csi
-pip install rich numpy
+chmod +x setup.sh
+./setup.sh
 
