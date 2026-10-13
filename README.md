@@ -22,7 +22,7 @@
 Clone the repository and run the universal setup script on **any Linux distribution or Termux**:
 
 ```bash
-git clone [https://github.com/ddidy/spectre-csi.git](https://github.com/ddidy/spectre-csi.git)
+git clone https://github.com/ddidy/spectre-csi.git
 cd spectre-csi
 chmod +x setup.sh
 ./setup.sh
