@@ -1,3 +1,4 @@
+<img width="720" height="489" alt="Screenshot_20261013_202204_Termux" src="https://github.com/user-attachments/assets/042acd1e-fc98-4590-a87b-d6a9606502e0" />
 # SPECTRE-CSI 🛡️⚡
 
 **Wi-Fi Channel State Information (CSI) Presence & Motion Detector**
