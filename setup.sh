@@ -6,7 +6,7 @@
 
 set -e
 
-cd "$(dirname "$0)"
+cd "$(dirname "$0")"
 
 GREEN='\033[0;32m'
 NC='\033[0m'
@@ -40,17 +40,20 @@ else
 fi
 
 # 2. Make Python Script Executable
-chmod +x spectre_csi.py
+if [ -f "spectre_csi.py" ]; then
+    chmod +x spectre_csi.py
+fi
 
 # 3. Create Global System Command (Symlink)
-if [ -w "/usr/local/bin" ] || command -v sudo &> /dev/null; then
-    echo -e "${GREEN}[+] Creating global 'spectre-csi' executable link...${NC}"
+if [ -f "spectre_csi.py" ]; then
+    echo -e "${GREEN}[+] Creating global executable link...${NC}"
     if [ -w "/usr/local/bin" ]; then
         ln -sf "$(pwd)/spectre_csi.py" /usr/local/bin/spectre-csi
-    else
+    elif command -v sudo &> /dev/null; then
         sudo ln -sf "$(pwd)/spectre_csi.py" /usr/local/bin/spectre-csi
     fi
 fi
 
 echo -e "${GREEN}[✔] SPECTRE-CSI installation complete!${NC}"
-echo -e "${YELLOW}[i] Run demo mode using:${NC} spectre-csi --demo ${YELLOW}or${NC} python3 spectre_csi.py --demo"
+echo -e "${YELLOW}[i] Run demo mode using:${NC} python3 spectre_csi.py --demo"
+
