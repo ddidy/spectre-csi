@@ -17,7 +17,7 @@
 
 ---
 
-## 📦 Installation
+## 📦 Installation. 
 
 Clone the repository and run the universal setup script on **any Linux distribution or Termux**:
 
